@@ -25,13 +25,11 @@ contract TokenCreation {
                         // mapping variable 
                                            mapping(address => uint) public balances;
  
-
                         // minting function
                                            function mint(address _address, uint _amount) public {
                                            totalSupply += _amount;
                                            balances[_address] += _amount;
     }
-
 
                         // burning function                                 
                                            function burn(address _address, uint _amount) public {
